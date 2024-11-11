@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'tenor sans', sans-serif;
+}
+
+:root {
+    --branco: #fff;
+    --header: #f0ebe1;
+    --grey: #333;
+    --lightgray: #666;
+    --fundo: #f0ebe1;
+} 
+
+body {
+    font-family: 'tenor sans', sans-serif;
+    color: var(--grey);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: var(--header);
+    padding: 20px;
+}
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+    color: var(--grey);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--lightgray);
+}
+
+.banner {
+    background-image: url(./img/michael-louie-KqxwgfjjMS0-unsplash.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--branco);
+}
+
+.banner h1 {
+    font-size: 64px;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--branco);
+    color: var(--grey);
+}
+
+.home_baixo {
+    display: flex; 
+    align-items: center; 
+    padding: 40px; 
+    background-color: var(--fundo);
+    gap: 20px; 
+}
+
+.home_baixo img {
+    width: 50%; 
+    max-width: 500px; 
+    border-radius: 8px; 
+}
+
+.texto_baixo {
+    width: 50%; 
+}
+
+.texto_baixo h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--grey);
+}
+
+.texto_baixo p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--lightgray);
+}
+
+.butaodebaixo {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--header);
+    color: var(--grey);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.butaodebaixo:hover {
+    background-color: var(--grey);
+    color: var(--branco);
+}
